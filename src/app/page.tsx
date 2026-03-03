@@ -7,6 +7,8 @@ import GameCatalog from '@/components/sections/game-catalog';
 import FinancialsSection from '@/components/sections/financials';
 import FAQ from '@/components/sections/faq';
 import MobileSupport from '@/components/sections/mobile-support';
+import SEOContent from '@/components/sections/seo-content';
+import Footer from '@/components/sections/footer';
 
 export default function Home() {
   return (
@@ -21,7 +23,9 @@ export default function Home() {
         <FinancialsSection />
         <FAQ />
         <MobileSupport />
+        <SEOContent />
       </main>
+      <Footer />
     </div>
   );
 }
