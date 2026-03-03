@@ -18,11 +18,16 @@ export default function Home() {
         <Hero />
         <EntranceInfo />
         <MirrorSiteSection />
-        <Bonuses />
+        
+        {/* Swapped middle section order */}
         <GameCatalog />
         <FinancialsSection />
-        <FAQ />
+        <Bonuses />
+        
+        {/* Swapped pre-footer section order */}
         <MobileSupport />
+        <FAQ />
+        
         <SEOContent />
       </main>
       <Footer />
