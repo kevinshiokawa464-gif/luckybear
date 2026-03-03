@@ -78,48 +78,48 @@ const Bonuses = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
           {/* Promo Code Card */}
           <div className="bg-[#242b38] border border-[#343d4d] rounded-[16px] p-8 flex flex-col hover:border-[#2b87f966] transition-all duration-300">
-            <h3 className="text-[24px] font-semibold text-white mb-6">Как использовать промокод</h3>
+            <h3 className="text-[26px] font-bold text-white mb-6">Как активировать бонус</h3>
             <ol className="space-y-4 mb-8">
               {[
-                'Войдите в личный кабинет Лаки Бир.',
-                'Перейдите в раздел «Бонусы».',
-                'Введите промокод в специальное поле.',
-                'Подтвердите активацию.'
+                'Авторизуйтесь в личном кабинете Lucky Bear.',
+                'Перейдите в раздел «Акции и Бонусы».',
+                'Введите ваш секретный промокод.',
+                'Подтвердите активацию и начните выигрывать!'
               ].map((step, i) => (
                 <li key={i} className="flex gap-4 items-start">
                   <span className="flex-shrink-0 w-6 h-6 rounded-full bg-[#2b87f9] text-white flex items-center justify-center text-xs font-bold mt-1">
                     {i + 1}
                   </span>
-                  <span className="text-[#9da5b1] text-[16px] leading-relaxed">{step}</span>
+                  <span className="text-[#cbd5e1] text-[17px] leading-relaxed">{step}</span>
                 </li>
               ))}
             </ol>
             <div className="mt-auto">
               <a 
-                href="/goto/" 
-                className="btn-primary w-full text-center py-3.5 mb-6"
+                href={TARGET_URL} 
+                className="btn-primary w-full text-center py-4 mb-6 font-bold text-lg"
               >
-                Активировать промокод
+                Активировать Бонус
               </a>
               <p className="text-[14px] text-[#9da5b1] leading-[1.4]">
-                Актуальные промокоды публикуются в официальных каналах казино и партнёрских источниках.
+                Мы регулярно рассылаем новые промокоды через Telegram-бот Лаки Бир.
               </p>
             </div>
           </div>
 
           {/* Permanent Promotions Card */}
           <div className="bg-[#242b38] border border-[#343d4d] rounded-[16px] p-8 flex flex-col hover:border-[#2b87f966] transition-all duration-300">
-            <h3 className="text-[24px] font-semibold text-white mb-6">Постоянные акции</h3>
+            <h3 className="text-[26px] font-bold text-white mb-6">Постоянные привилегии</h3>
             <ul className="space-y-4 mb-8">
               {[
-                { title: 'Колесо Фортуны', desc: 'каждый новый игрок получает бесплатный запуск с призами до 100 000 ₽.' },
-                { title: 'Кешбэк', desc: 'возврат части проигранных средств.' },
-                { title: 'Реферальная программа', desc: 'бонусы за приглашение друзей.' },
-                { title: 'Турниры', desc: 'еженедельные соревнования с крупными призовыми фондами.' }
+                { title: 'Колесо Удачи', desc: 'каждый день новые фриспины и денежные призы для активных игроков.' },
+                { title: 'Система Кешбэка', desc: 'получайте возврат до 20% от проигранных средств еженедельно.' },
+                { title: 'Партнерская программа', desc: 'зарабатывайте реальные деньги, приглашая друзей в игру.' },
+                { title: 'VIP-Турниры', desc: 'участвуйте в соревнованиях с призовыми фондами до 5 000 000 ₽.' }
               ].map((promo, i) => (
                 <li key={i} className="flex gap-4 items-start">
                   <span className="flex-shrink-0 w-2 h-2 rounded-sm bg-[#2b87f9] mt-2.5"></span>
-                  <div className="text-[#9da5b1] text-[16px] leading-relaxed">
+                  <div className="text-[#cbd5e1] text-[17px] leading-relaxed">
                     <strong className="text-white font-bold">{promo.title}</strong> — {promo.desc}
                   </div>
                 </li>
@@ -127,10 +127,10 @@ const Bonuses = () => {
             </ul>
             <div className="mt-auto">
               <a 
-                href="/goto/" 
-                className="btn-primary w-full text-center py-3.5"
+                href={TARGET_URL} 
+                className="btn-primary w-full text-center py-4 font-bold text-lg"
               >
-                Перейти к акциям
+                Все Акции
               </a>
             </div>
           </div>
@@ -138,7 +138,7 @@ const Bonuses = () => {
 
         <div className="text-center mt-12">
           <p className="text-[14px] text-[#9da5b1]">
-            18+. Играйте ответственно. Мы — аффилиат и не являемся оператором азартных игр.
+            18+. Играйте ответственно. Lucky Bear — аффилиат и не является оператором азартных игр.
           </p>
         </div>
       </div>
