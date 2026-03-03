@@ -1,13 +1,8 @@
 import React from 'react';
+import { TARGET_URL } from '@/app/constants';
 
 /**
  * Hero component for Lucky Bear Casino
- * 
- * Design Instructions:
- * - Dark background (#1a1f29)
- * - Clickbait title: 'Lucky Bear Casino: Твой Прямой Путь к Крупным Выигрышам!'
- * - Descriptive paragraph about slots and bonuses
- * - Large blue 'Play Now' CTA button pointing to https://lbgame777.xyz/2xn84Y
  */
 const Hero = () => {
   return (
@@ -58,7 +53,7 @@ const Hero = () => {
                 marginRight: 'auto'
               }}
             >
-              Lucky Bear Casino: Твой Прямой Путь к Крупным Выигрышам!
+              🔥 Lucky Bear Казино: Взрывные Выигрыши Ждут! Забери Свой Секретный Бонус Прямо Сейчас! 🚀
             </h1>
 
             {/* Descriptive Content */}
@@ -74,29 +69,30 @@ const Hero = () => {
                 marginRight: 'auto'
               }}
             >
-              Окунитесь в захватывающий мир азарта с лучшими лицензионными слотами от мировых провайдеров. 
-              Вас ждут эксклюзивные приветственные бонусы, мгновенные выплаты и круглосуточная поддержка. 
-              Начните свою победную серию в Lucky Bear прямо сейчас!
+              Присоединяйтесь к элите игроков Лаки Бир и окунитесь в мир лицензионного азарта. 
+              Вас ждут сотни топовых слотов, мгновенные выплаты и поддержка 24/7. 
+              Не упусти шанс стать миллионером уже сегодня!
             </p>
 
             {/* CTA Button */}
             <div className="elementor-button-wrapper" style={{ display: 'flex', justifyContent: 'center' }}>
               <a 
-                href="https://lbgame777.xyz/2xn84Y" 
+                href={TARGET_URL} 
                 className="btn-primary"
                 style={{
                   backgroundColor: '#2b87f9',
                   color: '#ffffff',
-                  fontSize: '18px',
-                  fontWeight: 600,
-                  padding: '16px 48px',
+                  fontSize: '20px',
+                  fontWeight: 700,
+                  padding: '18px 56px',
                   borderRadius: '12px',
                   textDecoration: 'none',
                   transition: 'all 0.3s ease-in-out',
                   display: 'inline-flex',
                   alignItems: 'center',
                   justifyContent: 'center',
-                  boxShadow: '0 4px 15px rgba(43, 135, 249, 0.3)'
+                  boxShadow: '0 4px 15px rgba(43, 135, 249, 0.4)',
+                  textTransform: 'uppercase'
                 }}
               >
                 Играть Сейчас
@@ -120,8 +116,8 @@ const Hero = () => {
         }
         .btn-primary:hover {
           filter: brightness(1.1);
-          transform: translateY(-2px);
-          box-shadow: 0 6px 20px rgba(43, 135, 249, 0.4);
+          transform: scale(1.05);
+          box-shadow: 0 6px 20px rgba(43, 135, 249, 0.5);
         }
       `}} />
     </section>
