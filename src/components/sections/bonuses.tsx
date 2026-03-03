@@ -1,4 +1,5 @@
 import React from 'react';
+import { TARGET_URL } from '@/app/constants';
 
 const Bonuses = () => {
   const bonusData = [
@@ -13,12 +14,12 @@ const Bonuses = () => {
   return (
     <section className="bg-[#1a1f29] py-[80px] px-6">
       <div className="max-w-[1200px] mx-auto">
-        <div className="text-center mb-10">
-          <h2 id="bonus-title" className="text-[32px] font-semibold text-white mb-4 leading-[1.3]">
-            Бонусная Программа и Промокоды
+        <div className="text-center mb-12">
+          <h2 id="bonus-title" className="text-[32px] md:text-[42px] font-bold text-white mb-4 leading-[1.3]">
+            Уникальные Бонусы Лаки Бир: Умножь Свой Депозит!
           </h2>
-          <p className="text-[#9da5b1] text-base max-w-[800px] mx-auto leading-[1.6]">
-            Приветственные бонусы для новых игроков. Выберите сумму депозита — система автоматически применит подходящий процент и рассчитает итоговую сумму.
+          <p className="text-[#e2e8f0] text-[18px] max-w-[800px] mx-auto leading-[1.6]">
+            Мы подготовили самую щедрую бонусную сетку в индустрии. Каждый новый игрок Лаки Бир получает шанс увеличить свой стартовый капитал до 360%!
           </p>
         </div>
 
