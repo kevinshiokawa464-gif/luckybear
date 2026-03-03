@@ -5,6 +5,7 @@ import MirrorSiteSection from '@/components/sections/mirror-site';
 import Bonuses from '@/components/sections/bonuses';
 import GameCatalog from '@/components/sections/game-catalog';
 import FinancialsSection from '@/components/sections/financials';
+import FAQ from '@/components/sections/faq';
 import MobileSupport from '@/components/sections/mobile-support';
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
         <Bonuses />
         <GameCatalog />
         <FinancialsSection />
+        <FAQ />
         <MobileSupport />
       </main>
     </div>
