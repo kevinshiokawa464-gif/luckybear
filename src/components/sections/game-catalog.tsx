@@ -1,5 +1,5 @@
 import React from 'react';
-import { Dice5, MonitorPlay, Zap, Trophy, Play } from 'lucide-react';
+import { TARGET_URL } from '@/app/constants';
 
 const GameCatalog = () => {
   return (
@@ -7,97 +7,73 @@ const GameCatalog = () => {
       <div className="container max-w-[1200px] mx-auto px-6">
         {/* Header Section */}
         <div className="text-center mb-12">
-          <h2 id="catalog-title" className="text-white text-[32px] font-bold leading-[1.3] mb-4">
-            Игровой Каталог: Слоты и Провайдеры
+          <h2 id="catalog-title" className="text-white text-[32px] md:text-[42px] font-bold leading-[1.3] mb-4">
+            Лучшие Игровые Автоматы в Лаки Бир: Выбирай Свой Слот
           </h2>
-          <p className="text-[#9da5b1] text-base max-w-[800px] mx-auto leading-[1.6]">
-            Lucky Bear сотрудничает с ведущими разработчиками игрового софта, что гарантирует качество, честность и разнообразие игрового процесса.
+          <p className="text-[#e2e8f0] text-[18px] max-w-[800px] mx-auto leading-[1.6]">
+            В нашем каталоге представлено более 2500 лицензионных игр от ведущих мировых провайдеров. Мы гарантируем честность результатов и высокую отдачу (RTP) в каждом слоте.
           </p>
         </div>
 
         {/* Top Providers Section */}
         <div className="mb-16">
-          <h3 className="text-white text-[24px] font-semibold leading-[1.4] mb-8 text-center uppercase tracking-wide">
+          <h3 className="text-white text-[24px] font-bold leading-[1.4] mb-8 text-center uppercase tracking-widest text-[#2b87f9]">
             Топ Провайдеры в Lucky Bear
           </h3>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
-            <div className="bg-[#242b38] border border-[#343d4d] rounded-[16px] p-6 text-center transition-all duration-300 hover:border-[#2b87f9]/60 hover:-translate-y-1">
-              <h3 className="text-white text-[20px] font-bold mb-3">Pragmatic Play</h3>
-              <p className="text-[#9da5b1] text-[14px]">Популярные слоты с высокими множителями и бонусными раундами.</p>
+            <div className="bg-[#242b38] border border-[#343d4d] rounded-[16px] p-6 text-center transition-all duration-300 hover:border-[#2b87f9]/60 hover:-translate-y-2">
+              <h3 className="text-white text-[22px] font-bold mb-3">Pragmatic Play</h3>
+              <p className="text-[#cbd5e1] text-[15px]">Популярные слоты с огромными иксами и захватывающими бонусными раундами.</p>
             </div>
             
-            <div className="bg-[#242b38] border border-[#343d4d] rounded-[16px] p-6 text-center transition-all duration-300 hover:border-[#2b87f9]/60 hover:-translate-y-1">
-              <h3 className="text-white text-[20px] font-bold mb-3">PG Soft</h3>
-              <p className="text-[#9da5b1] text-[14px]">Инновационные автоматы с уникальной механикой и визуальным стилем.</p>
+            <div className="bg-[#242b38] border border-[#343d4d] rounded-[16px] p-6 text-center transition-all duration-300 hover:border-[#2b87f9]/60 hover:-translate-y-2">
+              <h3 className="text-white text-[22px] font-bold mb-3">PG Soft</h3>
+              <p className="text-[#cbd5e1] text-[15px]">Мобильные хиты с инновационной механикой и ярким визуальным исполнением.</p>
             </div>
             
-            <div className="bg-[#242b38] border border-[#343d4d] rounded-[16px] p-6 text-center transition-all duration-300 hover:border-[#2b87f9]/60 hover:-translate-y-1">
-              <h3 className="text-white text-[20px] font-bold mb-3">Evolution Gaming</h3>
-              <p className="text-[#9da5b1] text-[14px]">Лидер Live Casino — профессиональные дилеры и поток в HD-качестве.</p>
+            <div className="bg-[#242b38] border border-[#343d4d] rounded-[16px] p-6 text-center transition-all duration-300 hover:border-[#2b87f9]/60 hover:-translate-y-2">
+              <h3 className="text-white text-[22px] font-bold mb-3">Evolution Gaming</h3>
+              <p className="text-[#cbd5e1] text-[15px]">Безусловный лидер Live Casino — настоящие дилеры и шоу мирового уровня.</p>
             </div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-[800px] mx-auto">
-            <div className="bg-[#242b38] border border-[#343d4d] rounded-[16px] p-6 text-center transition-all duration-300 hover:border-[#2b87f9]/60 hover:-translate-y-1">
-              <h3 className="text-white text-[20px] font-bold mb-3">Red Tiger</h3>
-              <p className="text-[#9da5b1] text-[14px]">Слоты с прогрессивными джекпотами и эксклюзивными бонусами.</p>
+            <div className="bg-[#242b38] border border-[#343d4d] rounded-[16px] p-6 text-center transition-all duration-300 hover:border-[#2b87f9]/60 hover:-translate-y-2">
+              <h3 className="text-white text-[22px] font-bold mb-3">Red Tiger</h3>
+              <p className="text-[#cbd5e1] text-[15px]">Автоматы с ежедневными джекпотами и эксклюзивными функциями для игроков.</p>
             </div>
             
-            <div className="bg-[#242b38] border border-[#343d4d] rounded-[16px] p-6 text-center transition-all duration-300 hover:border-[#2b87f9]/60 hover:-translate-y-1">
-              <h3 className="text-white text-[20px] font-bold mb-3">Hacksaw Gaming</h3>
-              <p className="text-[#9da5b1] text-[14px]">Современные автоматы с нестандартными функциями и высоким RTP.</p>
+            <div className="bg-[#242b38] border border-[#343d4d] rounded-[16px] p-6 text-center transition-all duration-300 hover:border-[#2b87f9]/60 hover:-translate-y-2">
+              <h3 className="text-white text-[22px] font-bold mb-3">Hacksaw Gaming</h3>
+              <p className="text-[#cbd5e1] text-[15px]">Современные слоты с огромным потенциалом выигрыша и стильным дизайном.</p>
             </div>
           </div>
         </div>
 
         {/* Game Categories Section */}
         <div className="mb-16">
-          <h3 className="text-white text-[24px] font-semibold leading-[1.4] mb-8 text-center uppercase tracking-wide">
-            Категории Игр
+          <h3 className="text-white text-[24px] font-bold leading-[1.4] mb-8 text-center uppercase tracking-widest text-[#2b87f9]">
+            Популярные Категории
           </h3>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
-            <div className="bg-[#242b38] border border-[#343d4d] rounded-[16px] p-8 text-center transition-all duration-300 hover:border-[#2b87f9]/60 hover:-translate-y-1">
-              <div className="flex justify-center mb-4">
-                <span className="text-[28px]">🎰</span>
-              </div>
-              <h3 className="text-white text-[20px] font-bold mb-3">Видеослоты</h3>
-              <p className="text-[#9da5b1] text-[14px]">Классические и современные автоматы с разной волатильностью и бонусами.</p>
+            <div className="bg-[#242b38] border border-[#343d4d] rounded-[16px] p-8 text-center transition-all duration-300 hover:border-[#2b87f9]/60 hover:-translate-y-2 shadow-lg">
+              <div className="flex justify-center mb-4 text-4xl">🎰</div>
+              <h3 className="text-white text-[22px] font-bold mb-3">Видеослоты</h3>
+              <p className="text-[#cbd5e1] text-[15px]">От фруктовой классики до современных 3D-слотов с тысячами линий выплат.</p>
             </div>
 
-            <div className="bg-[#242b38] border border-[#343d4d] rounded-[16px] p-8 text-center transition-all duration-300 hover:border-[#2b87f9]/60 hover:-translate-y-1">
-              <div className="flex justify-center mb-4">
-                <span className="text-[28px]">🎥</span>
-              </div>
-              <h3 className="text-white text-[20px] font-bold mb-3">Live Casino</h3>
-              <p className="text-[#9da5b1] text-[14px]">Рулетка, блэкджек, баккара и покер с живыми дилерами.</p>
+            <div className="bg-[#242b38] border border-[#343d4d] rounded-[16px] p-8 text-center transition-all duration-300 hover:border-[#2b87f9]/60 hover:-translate-y-2 shadow-lg">
+              <div className="flex justify-center mb-4 text-4xl">🎬</div>
+              <h3 className="text-white text-[22px] font-bold mb-3">Live Диллеры</h3>
+              <p className="text-[#cbd5e1] text-[15px]">Почувствуйте атмосферу реального казино, не выходя из своего дома.</p>
             </div>
 
-            <div className="bg-[#242b38] border border-[#343d4d] rounded-[16px] p-8 text-center transition-all duration-300 hover:border-[#2b87f9]/60 hover:-translate-y-1">
-              <div className="flex justify-center mb-4">
-                <span className="text-[28px]">⚡</span>
-              </div>
-              <h3 className="text-white text-[20px] font-bold mb-3">Crash Games</h3>
-              <p className="text-[#9da5b1] text-[14px]">Динамичные игры с мгновенными выплатами и управлением коэффициентом.</p>
-            </div>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-[800px] mx-auto">
-            <div className="bg-[#242b38] border border-[#343d4d] rounded-[16px] p-8 text-center transition-all duration-300 hover:border-[#2b87f9]/60 hover:-translate-y-1">
-              <div className="flex justify-center mb-4">
-                <span className="text-[28px]">🃏</span>
-              </div>
-              <h3 className="text-white text-[20px] font-bold mb-3">Настольные Игры</h3>
-              <p className="text-[#9da5b1] text-[14px]">Карточные и dice-игры для любителей стратегии и расчёта.</p>
-            </div>
-
-            <div className="bg-[#242b38] border border-[#343d4d] rounded-[16px] p-8 text-center transition-all duration-300 hover:border-[#2b87f9]/60 hover:-translate-y-1">
-              <div className="flex justify-center mb-4">
-                <span className="text-[28px]">🎡</span>
-              </div>
-              <h3 className="text-white text-[20px] font-bold mb-3">Игровые Шоу</h3>
-              <p className="text-[#9da5b1] text-[14px]">Интерактивные шоу с призами и живыми ведущими.</p>
+            <div className="bg-[#242b38] border border-[#343d4d] rounded-[16px] p-8 text-center transition-all duration-300 hover:border-[#2b87f9]/60 hover:-translate-y-2 shadow-lg">
+              <div className="flex justify-center mb-4 text-4xl">🚀</div>
+              <h3 className="text-white text-[22px] font-bold mb-3">Crash Игры</h3>
+              <p className="text-[#cbd5e1] text-[15px]">Быстрые раунды с возможностью сорвать куш за считанные мгновения.</p>
             </div>
           </div>
         </div>
@@ -105,13 +81,13 @@ const GameCatalog = () => {
         {/* Action Button & Disclaimer */}
         <div className="text-center">
           <a
-            href="/goto/"
-            className="inline-flex items-center bg-[#2b87f9] text-white text-[18px] font-semibold px-12 py-4 rounded-[8px] transition-all duration-300 hover:brightness-110 hover:shadow-[0_0_20px_rgba(43,135,249,0.3)] mb-6"
+            href={TARGET_URL}
+            className="inline-flex items-center bg-[#2b87f9] text-white text-[20px] font-bold px-16 py-5 rounded-[12px] transition-all duration-300 hover:brightness-110 hover:shadow-[0_0_30px_rgba(43,135,249,0.5)] mb-8 uppercase tracking-wider"
           >
             Играть Сейчас
           </a>
           <div className="text-[#9da5b1] text-[14px]">
-            18+. Играйте ответственно. Lucky Bear — аффилиат, не оператор азартных игр.
+            18+. Играйте ответственно. Lucky Bear — аффилиат, не является оператором азартных игр.
           </div>
         </div>
       </div>
