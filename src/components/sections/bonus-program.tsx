@@ -3,48 +3,131 @@ import React from 'react';
 /**
  * BonusProgram Component
  * 
- * Features a single prominent card with start bonuses, weekly cashback, and tournaments.
+ * Clones the "Bonus Program" section from Lucky Bear Casino.
+ * Features:
+ * - Large card layout with glassmorphism effect
+ * - Detailed descriptions for Welcome Bonus, Cashback, and Tournaments
+ * - Primary action button for viewing all offers
  */
-export default function BonusProgram() {
+const BonusProgram: React.FC = () => {
   return (
-    <section className="py-7.5 md:py-[60px] px-0">
-      <div className="container mx-auto max-w-[1200px] px-4 md:px-[16px]">
-        <h2 className="text-[28px] font-bold leading-[1.3] text-[#ffffff] mb-[20px] md:mb-[28px] text-center md:text-left">
-          Эксклюзивная Бонусная Система Lucky Bear
+    <section 
+      className="section" 
+      style={{
+        paddingTop: '80px',
+        paddingBottom: '80px',
+      }}
+    >
+      <div 
+        className="container"
+        style={{
+          maxWidth: '1100px',
+          margin: '0 auto',
+          paddingLeft: '16px',
+          paddingRight: '16px',
+        }}
+      >
+        <h2 
+          style={{
+            fontSize: '28px',
+            fontWeight: 700,
+            lineHeight: 1.3,
+            color: '#ffffff',
+            marginBottom: '24px',
+          }}
+        >
+          Бонусная программа Lucky Bear Casino
         </h2>
 
-        {/* The prominent card with glassmorphism effect */}
         <div 
-          className="bg-[rgba(255,255,255,0.04)] ring-1 ring-[#1d2939] rounded-[26px] p-[24px] shadow-[0_18px_60px_0_rgba(0,0,0,0.45)] backdrop-blur-[8px]"
+          className="card"
+          style={{
+            backgroundColor: 'rgba(255, 255, 255, 0.04)',
+            border: '1px solid rgba(255, 255, 255, 0.08)',
+            borderRadius: '16px',
+            padding: '24px',
+            boxShadow: '0 18px 60px rgba(0, 0, 0, 0.45)',
+          }}
         >
-          <div className="space-y-[20px] mb-[24px]">
-            {/* Start Bonus */}
-            <p className="text-[15px] md:text-[16px] leading-[1.6] text-[rgba(234,242,255,0.72)]">
-              <strong className="text-[#ffffff] font-semibold">Мега-старт для новичков</strong> — получите до 500% бонуса на первые пополнения и пакет фриспинов в самых горячих слотах. Активация происходит мгновенно в личном кабинете.
-            </p>
+          {/* Welcome Package */}
+          <p 
+            style={{
+              fontSize: '16px',
+              lineHeight: 1.6,
+              color: 'rgba(234, 242, 255, 0.72)',
+              marginBottom: '20px',
+            }}
+          >
+            <strong style={{ color: '#ffffff', fontWeight: 600 }}>Стартовое поощрение</strong> — до 100% к первому депозиту и 50 бесплатных вращений на топовых слотах. Бонус зачисляется автоматически сразу после внесения средств. Рекомендуем ознакомиться с правилами отыгрыша: вейджер обычно составляет х35–х40.
+          </p>
 
-            {/* Weekly Cashback */}
-            <p className="text-[15px] md:text-[16px] leading-[1.6] text-[rgba(234,242,255,0.72)]">
-              <strong className="text-[#ffffff] font-semibold">Честный кэшбэк</strong> — мы возвращаем до 15% от суммы ставок каждую неделю. Чем выше ваш VIP-статус, тем больше процент возврата!
-            </p>
+          {/* Weekly Cashback */}
+          <p 
+            style={{
+              fontSize: '16px',
+              lineHeight: 1.6,
+              color: 'rgba(234, 242, 255, 0.72)',
+              marginBottom: '20px',
+            }}
+          >
+            <strong style={{ color: '#ffffff', fontWeight: 600 }}>Еженедельный кэшбэк</strong> — частичное возвращение проигранных средств каждые семь дней. Размер выплаты определяется текущим уровнем в системе лояльности.
+          </p>
 
-            {/* Tournament Events */}
-            <p className="text-[15px] md:text-[16px] leading-[1.6] text-[rgba(234,242,255,0.72)]">
-              <strong className="text-[#ffffff] font-semibold">Битвы за Джекпот</strong> — участвуйте в ежедневных турнирах с призовым фондом более 1,000,000 рублей. Просто играйте в любимые автоматы и поднимайтесь в таблице лидеров.
-            </p>
-          </div>
+          {/* Tournaments */}
+          <p 
+            style={{
+              fontSize: '16px',
+              lineHeight: 1.6,
+              color: 'rgba(234, 242, 255, 0.72)',
+              marginBottom: '24px',
+            }}
+          >
+            <strong style={{ color: '#ffffff', fontWeight: 600 }}>Турнирные события</strong> — регулярные состязания с внушительными призовыми пулами. Участие не требует дополнительных взносов, нужно лишь делать ставки на реальные деньги в указанных автоматах.
+          </p>
 
-          {/* CTA Button */}
-          <div className="pt-[4px]">
+          {/* Action Button */}
+          <div style={{ display: 'flex' }}>
             <a 
               href="/reg.html" 
-              className="inline-flex items-center justify-center px-[22px] py-[11px] h-[48.8px] bg-[#3682ff] hover:bg-[#2563eb] text-[#ffffff] text-[16px] font-semibold rounded-[999px] transition-transform duration-200 active:scale-[0.98] btn-pill"
+              className="btn-primary js-cta"
+              data-goal="content_bonus"
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                backgroundColor: '#1d4ed8',
+                color: '#ffffff',
+                padding: '11px 24px',
+                borderRadius: '999px',
+                fontSize: '16px',
+                fontWeight: 600,
+                textDecoration: 'none',
+                transition: 'all 0.3s ease',
+              }}
             >
-              Забрать бонусы
+              Смотреть все предложения
             </a>
           </div>
         </div>
       </div>
+
+      <style jsx>{`
+        .btn-primary:hover {
+          background-color: #3b82f6;
+          transform: translateY(-1px);
+        }
+        
+        @media (max-width: 768px) {
+          h2 {
+            font-size: 24px !important;
+          }
+          .card {
+            padding: 20px !important;
+          }
+        }
+      `}</style>
     </section>
   );
-}
+};
+
+export default BonusProgram;

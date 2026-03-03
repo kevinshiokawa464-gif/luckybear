@@ -1,45 +1,41 @@
 import React from 'react';
 
-const Footer = () => {
+const Footer: React.FC = () => {
   return (
-    <footer className="footer w-full bg-[#050b18] border-t border-[#1d2939] py-12">
-      <div className="container mx-auto px-4 max-w-[1200px]">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-4 items-start">
-          {/* Company Info Column */}
-          <div className="flex flex-col gap-1">
-            <b className="text-white text-lg font-bold leading-tight">
+    <footer className="w-full bg-[#050b18] border-t border-[rgba(255,255,255,0.08)] py-12 md:py-16">
+      <div className="container mx-auto px-4 max-w-[1100px]">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 lg:gap-24">
+          {/* Brand & Info */}
+          <div className="flex flex-col gap-2">
+            <b className="text-white text-[16px] font-bold leading-relaxed">
               Lucky Bear (Лаки Бир)
             </b>
-            <div className="text-[#667085] text-[14px] leading-relaxed">
+            <div className="text-[13px] text-[#94a3b8] leading-relaxed">
               Информационный сайт. 18+
             </div>
           </div>
 
           {/* Sections Column */}
-          <div className="flex flex-col gap-2">
-            <div className="text-[14px] text-white font-bold mb-1">
+          <div className="flex flex-col gap-3">
+            <div className="text-[14px] font-bold text-white mb-1 uppercase tracking-wider">
               Разделы
             </div>
-            <div className="text-[14px]">
+            <div className="flex flex-col gap-2">
               <a 
                 href="/reg.html" 
-                className="text-[#98a2b3] hover:text-[#3682ff] transition-colors duration-200"
+                className="text-[14px] text-[#94a3b8] hover:text-[#3b82f6] transition-colors duration-300 w-fit"
               >
                 VIP-клуб
               </a>
-            </div>
-            <div className="text-[14px]">
               <a 
                 href="/reg.html" 
-                className="text-[#98a2b3] hover:text-[#3682ff] transition-colors duration-200"
+                className="text-[14px] text-[#94a3b8] hover:text-[#3b82f6] transition-colors duration-300 w-fit"
               >
                 Бонусы
               </a>
-            </div>
-            <div className="text-[14px]">
               <a 
                 href="/reg.html" 
-                className="text-[#98a2b3] hover:text-[#3682ff] transition-colors duration-200"
+                className="text-[14px] text-[#94a3b8] hover:text-[#3b82f6] transition-colors duration-300 w-fit"
               >
                 FAQ
               </a>
@@ -47,27 +43,32 @@ const Footer = () => {
           </div>
 
           {/* Documents Column */}
-          <div className="flex flex-col gap-2">
-            <div className="text-[14px] text-white font-bold mb-1">
+          <div className="flex flex-col gap-3">
+            <div className="text-[14px] font-bold text-white mb-1 uppercase tracking-wider">
               Документы
             </div>
-            <div className="text-[14px]">
+            <div className="flex flex-col gap-2">
               <a 
                 href="/reg.html" 
-                className="text-[#98a2b3] hover:text-[#3682ff] transition-colors duration-200 underline decoration-[#98a2b3]/30 underline-offset-4"
+                className="text-[14px] text-[#94a3b8] hover:text-[#3b82f6] transition-colors duration-300 w-fit"
               >
                 Политика
               </a>
-            </div>
-            <div className="text-[14px]">
               <a 
                 href="/reg.html" 
-                className="text-[#98a2b3] hover:text-[#3682ff] transition-colors duration-200 underline decoration-[#98a2b3]/30 underline-offset-4"
+                className="text-[14px] text-[#94a3b8] hover:text-[#3b82f6] transition-colors duration-300 w-fit"
               >
                 Ответственная игра
               </a>
             </div>
           </div>
+        </div>
+        
+        {/* Mobile Spacer/Bottom Divider for visual consistency */}
+        <div className="mt-12 pt-8 border-t border-[rgba(255,255,255,0.03)] text-center md:text-left">
+          <p className="text-[12px] text-[#475569]">
+            © {new Date().getFullYear()} Lucky Bear Casino. Все права защищены.
+          </p>
         </div>
       </div>
     </footer>

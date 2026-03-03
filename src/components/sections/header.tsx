@@ -3,145 +3,66 @@ import Image from 'next/image';
 
 const Header = () => {
   return (
-    <header 
-      className="topbar sticky top-0 left-0 right-0 w-full z-50 backdrop-blur-md"
-      style={{
-        backgroundColor: 'rgba(11, 18, 32, 0.65)',
-        height: '64.6875px',
-        display: 'block',
-        position: 'sticky',
-        zIndex: 50,
-      }}
-    >
-      <div 
-        className="container flex items-center justify-between h-full mx-auto"
-        style={{
-          width: '100%',
-          maxWidth: '1200px',
-          padding: '12px 16px',
-        }}
-      >
+    <header className="topbar sticky top-0 z-50 w-full bg-[#0b1220]/65 backdrop-blur-md border-b border-white/10">
+      <div className="container mx-auto px-4 lg:px-0 max-w-[1100px] flex items-center justify-between h-[64.6875px]">
         {/* Logo Section */}
-        <a 
-          href="/" 
-          className="brand flex items-center gap-2"
-          style={{
-            fontSize: '16px',
-            color: 'rgb(234, 242, 255)',
-            fontWeight: 800,
-            textDecoration: 'none',
-          }}
-        >
-          <span 
-            className="mark grid place-items-center"
-            style={{
-              width: '38px',
-              height: '38px',
-              backgroundColor: 'rgba(255, 255, 255, 0.05)',
-              borderRadius: '12px',
-              boxShadow: 'rgba(0, 0, 0, 0.45) 0px 18px 60px 0px',
-            }}
-          >
-            <img 
+        <a href="/" className="brand flex items-center gap-2 text-white font-bold text-lg decoration-none">
+          <span className="mark grid place-items-center w-[38px] h-[38px] bg-white/5 rounded-[12px] shadow-[0_18px_60px_0_rgba(0,0,0,0.45)]">
+            <Image 
               src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/a5233587-0ef8-4611-85d9-30e01b0be1ea-luckybear-ltd/assets/icons/logo-1.png" 
               alt="Lucky Bear" 
-              style={{
-                width: '26px',
-                height: '26px',
-                display: 'block'
-              }}
+              width={26} 
+              height={26}
+              className="block object-contain"
             />
           </span>
-          <div className="flex items-center gap-1">
-            <span style={{ fontWeight: 800 }}>Lucky</span>
-            <span style={{ color: 'rgb(42, 171, 255)', fontWeight: 800 }}>Bear</span>
-          </div>
+          <span className="flex items-center">
+            Lucky <span className="text-[#2aabff] ml-1">Bear</span>
+          </span>
         </a>
 
-        {/* Mobile Registration Button (Hidden on Desktop via CSS but structured in HTML) */}
+        {/* Mobile Registration Button (Visible only on mobile/tablet) */}
         <a 
           href="/reg.html" 
-          className="btn primary md:hidden"
-          style={{
-            display: 'none', // Following computed styles for desktop view rendering
-            backgroundColor: 'var(--primary)',
-            color: 'rgb(234, 242, 255)',
-            fontSize: '14px',
-            padding: '8px 14px',
-            borderRadius: '999px',
-            fontWeight: 600,
-          }}
+          className="lg:hidden bg-white/5 hover:bg-white/10 text-[#eaf2ff] text-[14px] px-[14px] py-[8px] rounded-full transition-colors border border-white/10"
         >
           Регистрация
         </a>
 
         {/* Desktop Navigation */}
-        <nav 
-          className="nav flex items-center"
-          style={{
-            height: '39.6875px',
-          }}
-        >
-          <div className="hidden md:flex items-center">
-            <a 
-              href="/reg.html" 
-              className="px-[10px] py-[8px] text-[14px] font-medium transition-colors hover:bg-white/5 rounded-[12px]"
-              style={{ color: 'rgb(234, 242, 255)' }}
-            >
-              Бонусы
-            </a>
-            <a 
-              href="/reg.html" 
-              className="px-[10px] py-[8px] text-[14px] font-medium transition-colors hover:bg-white/5 rounded-[12px]"
-              style={{ color: 'rgb(234, 242, 255)' }}
-            >
-              VIP
-            </a>
-            <a 
-              href="/reg.html" 
-              className="px-[10px] py-[8px] text-[14px] font-medium transition-colors hover:bg-white/5 rounded-[12px]"
-              style={{ color: 'rgb(234, 242, 255)' }}
-            >
-              FAQ
-            </a>
-          </div>
-
-          <div className="flex items-center gap-2 ml-2">
-            <a 
-              href="/reg.html" 
-              className="btn flex items-center justify-center transition-transform hover:-translate-y-[2px]"
-              style={{
-                width: '62.6406px',
-                height: '39.6875px',
-                padding: '8px 10px',
-                backgroundColor: 'rgba(255, 255, 255, 0.05)',
-                color: 'rgb(234, 242, 255)',
-                fontSize: '14px',
-                fontWeight: 600,
-                borderRadius: '12px',
-                textDecoration: 'none',
-              }}
-            >
-              Вход
-            </a>
-            <a 
-              href="/login.html" 
-              className="btn flex items-center justify-center transition-transform hover:-translate-y-[2px]"
-              style={{
-                width: '132.312px',
-                height: '39.6875px',
-                padding: '8px 10px',
-                backgroundColor: 'rgb(54, 130, 255)',
-                color: 'rgb(234, 242, 255)',
-                fontSize: '14px',
-                fontWeight: 600,
-                borderRadius: '12px',
-                textDecoration: 'none',
-              }}
-            >
-              Бот Телеграм
-            </a>
-          </div>
+        <nav className="nav hidden lg:flex items-center gap-1">
+          <a 
+            href="/reg.html" 
+            className="text-[#eaf2ff] text-[14px] px-[10px] py-[8px] rounded-[12px] hover:bg-white/5 transition-colors"
+          >
+            Бонусы
+          </a>
+          <a 
+            href="/reg.html" 
+            className="text-[#eaf2ff] text-[14px] px-[10px] py-[8px] rounded-[12px] hover:bg-white/5 transition-colors"
+          >
+            VIP
+          </a>
+          <a 
+            href="/reg.html" 
+            className="text-[#eaf2ff] text-[14px] px-[10px] py-[8px] rounded-[12px] hover:bg-white/5 transition-colors"
+          >
+            FAQ
+          </a>
+          <a 
+            href="/reg.html" 
+            className="btn js-cta text-[#eaf2ff] text-[14px] px-[10px] py-[8px] bg-white/5 rounded-[12px] hover:bg-white/10 transition-colors ml-2"
+            data-goal="click_login"
+          >
+            Вход
+          </a>
+          <a 
+            href="/login.html" 
+            className="btn primary js-cta text-[#eaf2ff] text-[14px] px-[10px] py-[8px] hover:bg-white/5 rounded-[12px] transition-colors border border-white/10"
+            data-goal="click_register"
+          >
+            Бот Телеграм
+          </a>
         </nav>
       </div>
     </header>

@@ -1,65 +1,61 @@
 import React from 'react';
 
-const advantages = [
-  {
-    icon: '🎰',
-    title: 'Лучшие Игровые Автоматы 2026',
-    description:
-      'На Lucky Bear вас ждут сотни сертифицированных слотов от мировых провайдеров. Классика, 3D-новинки и аппараты с огромными джекпотами — всё это с гарантированно высокой отдачей (RTP).',
-  },
-  {
-    icon: '🎁',
-    title: 'Бонусы Каждый День',
-    description:
-      'Получайте подарки за каждый депозит! Новичкам доступен приветственный пакет, а постоянным игрокам — еженедельный кэшбэк и эксклюзивные промокоды в Telegram.',
-  },
-  {
-    icon: '⚡',
-    title: 'Мгновенные Выплаты',
-    description:
-      'Выводите выигрыши за считанные минуты. Мы поддерживаем банковские карты, электронные кошельки и популярные криптовалюты. Никаких скрытых комиссий!',
-  },
-  {
-    icon: '📱',
-    title: 'Удобная Мобильная Версия',
-    description:
-      'Играйте в любимые слоты прямо со смартфона. Сайт идеально оптимизирован под iOS и Android, не требуя установки лишних приложений. Просто добавьте иконку на главный экран.',
-  },
-  {
-    icon: '👑',
-    title: 'VIP-Привилегии',
-    description:
-      'Станьте частью элитного клуба Lucky Bear. Получайте повышенные лимиты, персонального менеджера и доступ к закрытым турнирам с крупными призовыми фондами.',
-  },
-  {
-    icon: '🛡️',
-    title: 'Безопасность и Анонимность',
-    description:
-      'Ваши данные под защитой современных алгоритмов шифрования. Мы гарантируем полную конфиденциальность транзакций и поддерживаем принципы ответственной игры.',
-  },
-];
-
 const Advantages = () => {
+  const advantagesData = [
+    {
+      emoji: '🎰',
+      title: 'Проверенные игровые лицензированные автоматы',
+      description: 'Более 1000 слотов от лицензированных провайдеров: классические модели, свежие релизы, автоматы с прогрессивными джекпотами, настольные развлечения и лайв-игры с профессиональными дилерами. Каждый результат формируется честно, процент отдачи соответствует заявленному.',
+    },
+    {
+      emoji: '🎁',
+      title: 'Акции без выходных',
+      description: 'Новичкам доступен стартовый пакет поощрений, для постоянных игроков действует кэшбэк раз в неделю, фриспины за регулярные пополнения и индивидуальные промо-коды. Все вейджерные требования открыто публикуются в описаниях.',
+    },
+    {
+      emoji: '⚡',
+      title: 'Выплаты за минуты',
+      description: 'Забирайте выигрыши на банковские карты, электронные кошельки или криптовалютные счета. Запросы обрабатываются в течение нескольких минут после подтверждения. Однократная верификация не создаёт задержек при последующих выводах.',
+    },
+    {
+      emoji: '📱',
+      title: 'Версия для смартфонов',
+      description: 'Интерфейс полностью адаптирован под мобильные экраны — никаких лишних загрузок. Достаточно сохранить ярлык на домашнем экране для ещё более комфортного доступа.',
+    },
+    {
+      emoji: '👑',
+      title: 'Привилегированный клуб',
+      description: 'Для постоянных посетителей предусмотрен индивидуальный подход, увеличенный процент возврата, закрытые турниры и особые подарки. Статус повышается пропорционально игровой активности.',
+    },
+    {
+      emoji: '🛡️',
+      title: 'Защита и 18+',
+      description: 'Личная информация надёжно зашифрована. Мы соблюдаем принципы ответственной игры: устанавливаем депозитные лимиты, предоставляем возможность самоисключения, информируем о возможных рисках. Доступ только совершеннолетним пользователям.',
+    },
+  ];
+
   return (
-    <section className="py-[60px] px-4 md:px-0">
-      <div className="max-w-[1200px] mx-auto">
-        <h2 className="text-[28px] font-bold leading-[1.3] text-white mb-8 text-center md:text-left">
-          Почему выбирают Lucky Bear Казино?
+    <section className="py-[40px] md:py-[80px]">
+      <div className="container px-4 mx-auto max-w-[1200px]">
+        <h2 className="text-[28px] md:text-[32px] font-bold text-white mb-6 md:mb-10 text-center md:text-left leading-[1.3]">
+          Ключевые преимущества Lucky Bear Casino
         </h2>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-          {advantages.map((item, index) => (
-            <div
-              key={index}
-              className="bg-[#0a1428] border border-[#1d2939] rounded-[12px] p-6 shadow-[0_10px_15px_-3px_rgba(0,0,0,0.5)] transition-transform duration-200 hover:-translate-y-1"
+          {advantagesData.map((item, index) => (
+            <div 
+              key={index} 
+              className="glass-panel p-6 bg-[#0f172a]/60 backdrop-blur-[12px] border border-white/10 rounded-[16px] card-hover hover:bg-[#1e293b] hover:translate-y-[-4px] transition-all duration-300"
             >
-              <h3 className="text-[18px] font-semibold leading-[1.4] text-white mb-4 flex items-start gap-2">
-                <span className="shrink-0">{item.icon}</span>
-                <span>{item.title}</span>
-              </h3>
-              <p className="text-[15px] leading-[1.6] text-[#98a2b3] font-normal">
-                {item.description}
-              </p>
+              <div className="flex flex-col gap-3">
+                <h3 className="text-[18px] md:text-[20px] font-semibold text-white leading-[1.4] flex gap-2">
+                  <span className="shrink-0">{item.emoji}</span>
+                  <span>{item.title}</span>
+                </h3>
+                <p className="text-[14px] md:text-[16px] text-[#94a3b8] leading-[1.6]">
+                  {item.description}
+                </p>
+              </div>
             </div>
           ))}
         </div>
