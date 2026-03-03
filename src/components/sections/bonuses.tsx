@@ -84,7 +84,7 @@ const Bonuses = () => {
             </h3>
             <div className="mb-8 p-6 bg-[#1a1f29] border-2 border-dashed border-blue-500/50 rounded-2xl text-center group-hover:scale-[1.02] transition-transform">
               <span className="text-gray-400 text-sm block mb-2 uppercase font-bold">Используй при регистрации:</span>
-              <span className="text-3xl font-black text-white tracking-[0.2em] uppercase">LUCKYBEAR500</span>
+                <span className="text-3xl font-black text-white tracking-[0.2em] uppercase">Rish</span>
             </div>
             <ol className="space-y-5 mb-10">
               {[
