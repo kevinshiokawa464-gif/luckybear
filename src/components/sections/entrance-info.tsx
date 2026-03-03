@@ -5,38 +5,38 @@ const EntranceInfo = () => {
     <section className="bg-background py-20 px-6 sm:px-8 md:px-12">
       <div className="max-w-[1200px] mx-auto">
         <div className="space-y-6">
-          <h3 className="text-[24px] font-semibold text-foreground leading-[1.4] font-display">
-            Как Войти в Lucky Bear: Регистрация и Доступ
+          <h3 className="text-[28px] font-bold text-white leading-[1.3] font-display">
+            Мгновенный Доступ и Регистрация в Lucky Bear
           </h3>
           
           <div className="space-y-4">
-            <p className="text-[16px] text-secondary-foreground leading-[1.6]">
-              Процесс входа на платформу максимально упрощен. Для начала игры потребуется пройти быструю регистрацию через один из доступных способов:
+            <p className="text-[18px] text-[#e2e8f0] leading-[1.6]">
+              Присоединиться к нашему сообществу проще простого. Мы создали максимально удобные способы авторизации, чтобы вы могли начать играть всего через несколько секунд:
             </p>
             
             <ul className="space-y-3 pl-2">
-              <li className="flex items-start text-[16px] text-secondary-foreground leading-[1.6]">
-                <span className="mr-3 mt-[10px] h-[4px] w-[4px] min-w-[4px] rounded-full bg-secondary-foreground" />
+              <li className="flex items-start text-[17px] text-[#cbd5e1] leading-[1.6]">
+                <span className="mr-3 mt-[10px] h-[6px] w-[6px] min-w-[6px] rounded-full bg-[#2b87f9]" />
                 <span>
-                  Через <span className="text-foreground">Telegram</span> — авторизация за несколько секунд без заполнения форм
+                  <strong className="text-white">Telegram</strong> — Быстрый вход через защищенный мессенджер в один клик.
                 </span>
               </li>
-              <li className="flex items-start text-[16px] text-secondary-foreground leading-[1.6]">
-                <span className="mr-3 mt-[10px] h-[4px] w-[4px] min-w-[4px] rounded-full bg-secondary-foreground" />
+              <li className="flex items-start text-[17px] text-[#cbd5e1] leading-[1.6]">
+                <span className="mr-3 mt-[10px] h-[6px] w-[6px] min-w-[6px] rounded-full bg-[#2b87f9]" />
                 <span>
-                  Через <span className="text-foreground">Google-аккаунт</span> — мгновенный доступ с использованием существующего профиля
+                  <strong className="text-white">Google</strong> — Используйте свой профиль для моментального доступа к играм.
                 </span>
               </li>
-              <li className="flex items-start text-[16px] text-secondary-foreground leading-[1.6]">
-                <span className="mr-3 mt-[10px] h-[4px] w-[4px] min-w-[4px] rounded-full bg-secondary-foreground" />
+              <li className="flex items-start text-[17px] text-[#cbd5e1] leading-[1.6]">
+                <span className="mr-3 mt-[10px] h-[6px] w-[6px] min-w-[6px] rounded-full bg-[#2b87f9]" />
                 <span>
-                  Стандартная регистрация — указание email и создание пароля
+                  <strong className="text-white">E-mail</strong> — Классическая регистрация для тех, кто предпочитает традиционный способ.
                 </span>
               </li>
             </ul>
 
-            <p className="text-[16px] text-secondary-foreground leading-[1.6] pt-2">
-              После регистрации открывается доступ ко всем функциям казино Лаки Бир: депозиту в рублях, бонусным программам и полному каталогу игр. Вход осуществляется через официальный сайт или актуальное зеркало.
+            <p className="text-[18px] text-[#e2e8f0] leading-[1.6] pt-2">
+              Ваша учетная запись в Лаки Бир открывает дверь к бесконечному азарту: эксклюзивным депозитам в рублях, ежедневным акциям и тысячам игр. Все это доступно через наше актуальное зеркало 24/7.
             </p>
           </div>
         </div>
