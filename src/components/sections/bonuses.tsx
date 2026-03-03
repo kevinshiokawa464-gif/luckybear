@@ -102,12 +102,12 @@ const Bonuses = () => {
               ))}
             </ol>
             <div className="mt-auto">
-              <a 
-                href={TARGET_URL} 
-                className="btn-primary w-full text-center py-5 mb-6 font-black text-xl shadow-[0_15px_30px_rgba(43,135,249,0.3)] hover:shadow-blue-600/40 transition-all uppercase tracking-tighter"
-              >
-                ЗАБРАТЬ 500% БОНУС 🔥
-              </a>
+                <a 
+                  href={TARGET_URL} 
+                  className="btn-primary w-full text-center py-5 mb-6 font-black text-xl shadow-[0_15px_30px_rgba(43,135,249,0.3)] hover:shadow-blue-600/40 transition-all uppercase tracking-tighter"
+                >
+                  ЗАБРАТЬ БОНУС ПРЯМО СЕЙЧАС 🔥
+                </a>
               <p className="text-[14px] text-[#9da5b1] leading-[1.4] italic text-center">
                   * Промокод Rish действителен только для новых игроков.
               </p>
