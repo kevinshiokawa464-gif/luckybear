@@ -101,9 +101,10 @@ const Hero = () => {
                   textTransform: 'uppercase',
                   letterSpacing: '-0.02em'
                 }}
-              >
-                ЗАБЕРИ 500% ПРЯМО СЕЙЧАС 🔥
-              </a>
+                >
+                  ЗАБЕРИ 500 ПРОЦЕНТОВ ПРЯМО СЕЙЧАС 🔥
+                </a>
+
             
             <div className="flex flex-col text-left gap-1 opacity-60">
                <span className="text-white text-xs font-black uppercase tracking-widest flex items-center gap-2">
