@@ -82,28 +82,28 @@ const Hero = () => {
 
           {/* CTA Button */}
           <div className="button-group flex flex-col md:flex-row gap-6 justify-center items-center">
-            <a 
-              href={TARGET_URL} 
-              className="btn-primary hover-scale"
-              style={{
-                backgroundColor: '#2b87f9',
-                color: '#ffffff',
-                fontSize: '24px',
-                fontWeight: 900,
-                padding: '22px 64px',
-                borderRadius: '20px',
-                textDecoration: 'none',
-                transition: 'all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275)',
-                display: 'inline-flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                boxShadow: '0 15px 35px rgba(43, 135, 249, 0.5)',
-                textTransform: 'uppercase',
-                letterSpacing: '-0.02em'
-              }}
-            >
-              ПОЛУЧИТЬ БОНУС 🐻
-            </a>
+              <a 
+                href={TARGET_URL} 
+                className="btn-primary hover-scale"
+                style={{
+                  backgroundColor: '#2b87f9',
+                  color: '#ffffff',
+                  fontSize: '24px',
+                  fontWeight: 900,
+                  padding: '22px 64px',
+                  borderRadius: '20px',
+                  textDecoration: 'none',
+                  transition: 'all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275)',
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  boxShadow: '0 15px 35px rgba(43, 135, 249, 0.5)',
+                  textTransform: 'uppercase',
+                  letterSpacing: '-0.02em'
+                }}
+              >
+                ЗАБЕРИ 500% ПРЯМО СЕЙЧАС 🔥
+              </a>
             
             <div className="flex flex-col text-left gap-1 opacity-60">
                <span className="text-white text-xs font-black uppercase tracking-widest flex items-center gap-2">
