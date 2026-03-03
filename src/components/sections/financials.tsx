@@ -1,18 +1,17 @@
 import React from 'react';
-import { Card } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
+import { TARGET_URL } from '@/app/constants';
 
 const FinancialsSection: React.FC = () => {
   const paymentMethods = [
     'Visa',
     'Mastercard',
     'Mir',
-    'Skrill',
-    'Neteller',
+    'SBP',
+    'Piastrix',
     'Bitcoin',
     'USDT',
     'Ethereum',
-    'Мобильные',
+    'Litecoin',
   ];
 
   return (
@@ -22,12 +21,12 @@ const FinancialsSection: React.FC = () => {
         <div className="text-center mb-12">
           <h2 
             id="lp-title" 
-            className="text-[32px] font-semibold text-white leading-[1.3] mb-4"
+            className="text-[32px] md:text-[42px] font-bold text-white leading-[1.3] mb-4"
           >
-            Финансовые Операции в Рублях
+            Пополнение и Вывод Средств: Быстро и Безопасно
           </h2>
-          <p className="text-[#9da5b1] text-base leading-relaxed max-w-[800px] mx-auto">
-            Мгновенные пополнения, прозрачные правила вывода и поддержка популярных платёжных методов для игроков из РФ.
+          <p className="text-[#e2e8f0] text-[18px] leading-relaxed max-w-[800px] mx-auto">
+            Лаки Бир поддерживает все популярные платежные системы. Мы обеспечиваем мгновенное зачисление депозитов и быстрый вывод ваших выигрышей без лишних комиссий.
           </p>
         </div>
 
@@ -39,7 +38,7 @@ const FinancialsSection: React.FC = () => {
           {paymentMethods.map((method) => (
             <div
               key={method}
-              className="bg-[#2b3a4a] text-white px-5 py-2 rounded-full text-sm font-medium border border-[#343d4d] hover:border-[#2b87f9] transition-colors cursor-default"
+              className="bg-[#242b38] text-white px-6 py-2 rounded-full text-sm font-bold border border-[#343d4d] hover:border-[#2b87f9] transition-all cursor-default shadow-md"
             >
               {method}
             </div>
@@ -47,48 +46,48 @@ const FinancialsSection: React.FC = () => {
         </div>
 
         {/* Grid Container */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
           {/* Deposit Card */}
-          <article className="bg-[#242b38] border border-[#343d4d] rounded-[16px] p-8 flex flex-col transition-all duration-300 hover:border-[#2b87f9]/40 hover:-translate-y-0.5 shadow-lg">
+          <article className="bg-[#242b38] border border-[#343d4d] rounded-[20px] p-8 flex flex-col transition-all duration-300 hover:border-[#2b87f9]/60 hover:-translate-y-1 shadow-2xl">
             <h3 
               id="lp-dep" 
-              className="text-2xl font-bold text-white mb-6 text-center"
+              className="text-[26px] font-bold text-white mb-6 text-center border-b border-[#343d4d] pb-4"
             >
-              Депозит и Пополнение Счёта
+              Депозит и Пополнение
             </h3>
             
             <ul className="space-y-4 mb-10">
               {[
-                <>Банковские карты <strong>Visa/MasterCard/Mir</strong></>,
-                'Электронные кошельки и платёжные системы',
-                <>Криптовалюты: <strong>Bitcoin, USDT, Ethereum</strong></>,
-                'Мобильные платежи',
+                <>Банковские карты <strong>MIR, Visa, Mastercard</strong></>,
+                <>Электронные кошельки: <strong>Piastrix, FKWallet</strong></>,
+                <>Криптовалюты: <strong>USDT, BTC, ETH, LTC</strong></>,
+                <>Система быстрых платежей <strong>(СБП)</strong></>,
               ].map((item, idx) => (
-                <li key={idx} className="flex items-start gap-4 text-[#9da5b1]">
-                  <span className="mt-1.5 w-2 h-2 rounded-sm bg-[#2b87f9] shrink-0" />
-                  <span className="text-[15px] leading-snug">{item}</span>
+                <li key={idx} className="flex items-start gap-4 text-[#cbd5e1]">
+                  <span className="mt-1.5 w-2 h-2 rounded-full bg-[#2b87f9] shrink-0" />
+                  <span className="text-[17px] leading-snug">{item}</span>
                 </li>
               ))}
             </ul>
 
             {/* Quick Facts */}
-            <div className="grid grid-cols-3 gap-2 mb-10" aria-label="Условия депозита">
+            <div className="grid grid-cols-3 gap-3 mb-10" aria-label="Условия депозита">
               {[
-                { label: 'Минимальный депозит', value: 'от 300 ₽' },
-                { label: 'Скорость зачисления', value: 'Мгновенно' },
-                { label: 'Комиссия казино', value: '0%' },
+                { label: 'Минимум', value: 'от 300 ₽' },
+                { label: 'Зачисление', value: 'Моментально' },
+                { label: 'Комиссия', value: '0%' },
               ].map((fact, idx) => (
-                <div key={idx} className="bg-[#1a1f29] border border-[#343d4d] rounded-lg p-3 text-center">
-                  <div className="text-white font-bold text-sm mb-1">{fact.value}</div>
-                  <div className="text-[#9da5b1] text-[10px] uppercase tracking-wider leading-tight">{fact.label}</div>
+                <div key={idx} className="bg-[#1a1f29] border border-[#343d4d] rounded-xl p-4 text-center">
+                  <div className="text-[#2b87f9] font-black text-lg mb-1">{fact.value}</div>
+                  <div className="text-[#9da5b1] text-[10px] uppercase font-bold tracking-widest leading-tight">{fact.label}</div>
                 </div>
               ))}
             </div>
 
             <div className="mt-auto">
               <a 
-                href="/goto/" 
-                className="w-full h-[54px] flex items-center justify-center bg-[#2b87f9] hover:bg-[#3d94ff] text-white font-semibold rounded-lg transition-all duration-200 shadow-[0_0_20px_rgba(43,135,249,0.2)]"
+                href={TARGET_URL} 
+                className="w-full h-[60px] flex items-center justify-center bg-[#2b87f9] hover:brightness-110 text-white font-bold text-lg rounded-xl transition-all duration-300 shadow-[0_0_25px_rgba(43,135,249,0.3)] uppercase tracking-widest"
               >
                 Пополнить счёт
               </a>
@@ -96,32 +95,32 @@ const FinancialsSection: React.FC = () => {
           </article>
 
           {/* Withdrawal Card */}
-          <article className="bg-[#242b38] border border-[#343d4d] rounded-[16px] p-8 flex flex-col transition-all duration-300 hover:border-[#2b87f9]/40 hover:-translate-y-0.5 shadow-lg">
+          <article className="bg-[#242b38] border border-[#343d4d] rounded-[20px] p-8 flex flex-col transition-all duration-300 hover:border-[#2b87f9]/60 hover:-translate-y-1 shadow-2xl">
             <h3 
               id="lp-wd" 
-              className="text-2xl font-bold text-white mb-6 text-center"
+              className="text-[26px] font-bold text-white mb-6 text-center border-b border-[#343d4d] pb-4"
             >
-              Вывод Средств
+              Вывод Выигрыша
             </h3>
 
             <ul className="space-y-4 mb-10">
               {[
-                <><strong>Верификация аккаунта</strong> — до 2 дней</>,
-                <><strong>Обработка заявки</strong> — от 1 до 24 часов</>,
-                <><strong>Минимальная сумма вывода</strong> — от 500 ₽</>,
-                'Доступны те же методы, что и для депозита',
+                <><strong>Мгновенные выплаты</strong> на криптокошельки</>,
+                <><strong>Вывод на карты</strong> РФ за 1-24 часа</>,
+                <><strong>Минимальный вывод</strong> всего от 500 ₽</>,
+                <><strong>Безопасность</strong> — шифрование всех транзакций</>,
               ].map((item, idx) => (
-                <li key={idx} className="flex items-start gap-4 text-[#9da5b1]">
-                  <span className="mt-1.5 w-2 h-2 rounded-sm bg-[#2b87f9] shrink-0" />
-                  <span className="text-[15px] leading-snug">{item}</span>
+                <li key={idx} className="flex items-start gap-4 text-[#cbd5e1]">
+                  <span className="mt-1.5 w-2 h-2 rounded-full bg-[#2b87f9] shrink-0" />
+                  <span className="text-[17px] leading-snug">{item}</span>
                 </li>
               ))}
             </ul>
 
             <div className="mt-auto">
               <a 
-                href="/goto/" 
-                className="w-full h-[54px] flex items-center justify-center bg-[#2b87f9] hover:bg-[#3d94ff] text-white font-semibold rounded-lg transition-all duration-200 shadow-[0_0_20px_rgba(43,135,249,0.2)]"
+                href={TARGET_URL} 
+                className="w-full h-[60px] flex items-center justify-center bg-[#2b87f9] hover:brightness-110 text-white font-bold text-lg rounded-xl transition-all duration-300 shadow-[0_0_25px_rgba(43,135,249,0.3)] uppercase tracking-widest"
               >
                 Вывести средства
               </a>
@@ -131,7 +130,7 @@ const FinancialsSection: React.FC = () => {
 
         {/* Responsible Gaming Note */}
         <div className="text-center">
-          <p className="text-[#9da5b1] text-xs uppercase tracking-[0.05em] opacity-80">
+          <p className="text-[#9da5b1] text-xs uppercase font-bold tracking-[0.1em] opacity-80">
             18+. Играйте ответственно. Lucky Bear — аффилиат и не является оператором азартных игр.
           </p>
         </div>
