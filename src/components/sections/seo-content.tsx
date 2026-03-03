@@ -87,7 +87,7 @@ const SEOContent: React.FC = () => {
             <p>
               Чтобы избежать проблем с доступом, используйте <strong className="text-white">рабочее зеркало лакибир</strong>. 
               В <strong className="text-white">luckybear casino</strong> созданы все условия для комфортной игры. 
-              Не забывайте вводить <strong className="text-white">промокод luckybear</strong> в личном кабинете. 
+              Не забывайте вводить <strong className="text-white">промокод Rish</strong> в личном кабинете. 
               Для активных партнеров предусмотрена выгодная <strong className="text-white">luckybear партнерская программа</strong>. 
               Наш <strong className="text-white">luckybear bot</strong> и <strong className="text-white">лакибир бот</strong> всегда помогут вам обойти любые блокировки.
             </p>
