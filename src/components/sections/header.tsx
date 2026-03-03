@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { TARGET_URL } from '@/app/constants';
 
 const Header = () => {
   return (
@@ -8,10 +9,10 @@ const Header = () => {
       <div className="container mx-auto max-w-[1200px] px-4 md:px-6 h-[80px] flex items-center justify-between">
         {/* Logo Section */}
         <div className="flex-shrink-0">
-          <Link href="/" className="block">
+          <Link href={TARGET_URL} className="block">
             <Image
               src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/a5233587-0ef8-4611-85d9-30e01b0be1ea-luckybear-zerkalo-ru/assets/images/_D0_BB_D0_BE_D0_B3_D0_BE_D1_82_D0_B8_D0_BF-_D0_BB_-1.png"
-              alt="Lucky Bear Logo"
+              alt="Lucky Bear Казино Логотип"
               width={160}
               height={30}
               priority
@@ -23,19 +24,19 @@ const Header = () => {
         {/* Navigation Menu */}
         <nav className="hidden lg:flex items-center gap-8">
           <Link 
-            href="/" 
+            href={TARGET_URL} 
             className="text-[16px] font-medium text-white hover:text-[#2b87f9] transition-colors duration-300"
           >
             Lucky Bear Казино
           </Link>
           <Link 
-            href="/registration-lucky-bear/" 
+            href={TARGET_URL} 
             className="text-[16px] font-medium text-white hover:text-[#2b87f9] transition-colors duration-300"
           >
             Регистрация
           </Link>
           <Link 
-            href="/bonuse/" 
+            href={TARGET_URL} 
             className="text-[16px] font-medium text-white hover:text-[#2b87f9] transition-colors duration-300"
           >
             Бонусы
@@ -45,19 +46,19 @@ const Header = () => {
         {/* Action Buttons */}
         <div className="flex items-center gap-3">
           <Link 
-            href="/goto/"
+            href={TARGET_URL}
             className="hidden sm:flex h-[44px] px-6 items-center justify-center rounded-lg bg-white text-[#1a1f29] font-bold text-[16px] hover:bg-opacity-90 transition-all duration-300"
           >
             Вход
           </Link>
           <Link 
-            href="/goto/"
+            href={TARGET_URL}
             className="flex h-[44px] px-6 items-center justify-center rounded-lg bg-[#2b87f9] text-white font-bold text-[16px] hover:filter hover:brightness-110 shadow-[0_0_20px_rgba(43,135,249,0.3)] transition-all duration-300"
           >
             Регистрация
           </Link>
           
-          {/* Mobile Menu Trigger (Visual only as per instructions) */}
+          {/* Mobile Menu Trigger */}
           <button className="lg:hidden p-2 text-white">
             <svg 
               className="w-6 h-6" 
