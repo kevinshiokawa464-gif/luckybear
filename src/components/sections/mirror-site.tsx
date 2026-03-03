@@ -6,31 +6,31 @@ import { Check } from 'lucide-react';
  * Focuses on pixel-perfect replication of the provided design instructions, HTML structure, and styles.
  */
 export default function MirrorSiteSection() {
-  const mirrorBenefits = [
-    'Получить доступ при блокировке основного домена',
-    'Сохранить все данные аккаунта и баланс',
-    'Использовать актуальные промокоды',
-    'Продолжить игру без потери прогресса',
-  ];
+    const mirrorBenefits = [
+      'Обойти любые ограничения и блокировки провайдеров',
+      'Мгновенно войти в личный кабинет под своими данными',
+      'Активировать все доступные бонусы и промокоды',
+      'Играть в любимые слоты без задержек и сбоев',
+    ];
 
-  return (
-    <section className="bg-[#1a1f29] py-[80px] px-6 md:px-0">
-      <div className="max-w-[1200px] mx-auto">
-        <div className="bg-[#242b38] border border-[#343d4d] rounded-[16px] p-8 md:p-12 text-center shadow-[0_10px_30px_rgba(0,0,0,0.3)]">
-          {/* Section Heading */}
-          <h2 
-            id="mirror-title" 
-            className="text-[32px] md:text-[40px] font-semibold text-white leading-[1.3] mb-6 font-display"
-          >
-            Рабочее Зеркало Lucky Bear — Стабильный Доступ
-          </h2>
+    return (
+      <section className="bg-[#1a1f29] py-[80px] px-6 md:px-0">
+        <div className="max-w-[1200px] mx-auto">
+          <div className="bg-[#242b38] border border-[#343d4d] rounded-[16px] p-8 md:p-12 text-center shadow-[0_10px_30px_rgba(0,0,0,0.4)]">
+            {/* Section Heading */}
+            <h2 
+              id="mirror-title" 
+              className="text-[32px] md:text-[42px] font-bold text-white leading-[1.3] mb-6 font-display"
+            >
+              Актуальное Зеркало Lucky Bear: Вход 24/7 Без Ограничений
+            </h2>
 
-          {/* Intro Paragraph */}
-          <p className="text-[#9da5b1] text-[16px] leading-[1.6] mb-8 max-w-[900px] mx-auto">
-            Для обеспечения бесперебойной работы платформа использует систему зеркал — 
-            альтернативных адресов с идентичным функционалом. Зеркало Lucky Bear полностью 
-            дублирует основной сайт и позволяет:
-          </p>
+            {/* Intro Paragraph */}
+            <p className="text-[#e2e8f0] text-[18px] leading-[1.6] mb-8 max-w-[900px] mx-auto">
+              Мы заботимся о вашем комфорте, поэтому постоянно обновляем рабочие ссылки. 
+              Официальное зеркало Лаки Бир гарантирует стабильный доступ ко всем функциям казино, 
+              сохраняя ваши достижения и баланс в полной безопасности:
+            </p>
 
           {/* Benefits List */}
           <ul className="grid grid-cols-1 md:grid-cols-1 gap-3 max-w-[600px] mx-auto text-left mb-8">
