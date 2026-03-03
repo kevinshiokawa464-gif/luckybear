@@ -109,7 +109,7 @@ const Bonuses = () => {
                 ЗАБРАТЬ 500% БОНУС 🔥
               </a>
               <p className="text-[14px] text-[#9da5b1] leading-[1.4] italic text-center">
-                * Промокод luckybear действителен только для новых игроков.
+                  * Промокод Rish действителен только для новых игроков.
               </p>
             </div>
           </div>
