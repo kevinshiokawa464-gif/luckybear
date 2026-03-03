@@ -1,29 +1,25 @@
 import Header from '@/components/sections/header';
-import HeroSection from '@/components/sections/hero';
-import Advantages from '@/components/sections/advantages';
-import GameCategories from '@/components/sections/game-categories';
-import RegistrationGuide from '@/components/sections/registration-guide';
-import BonusProgram from '@/components/sections/bonus-program';
-import MobileInfo from '@/components/sections/mobile-info';
-import FAQSection from '@/components/sections/faq';
-import ResponsibleGaming from '@/components/sections/responsible-gaming';
-import Footer from '@/components/sections/footer';
+import Hero from '@/components/sections/hero';
+import EntranceInfo from '@/components/sections/entrance-info';
+import MirrorSiteSection from '@/components/sections/mirror-site';
+import Bonuses from '@/components/sections/bonuses';
+import GameCatalog from '@/components/sections/game-catalog';
+import FinancialsSection from '@/components/sections/financials';
+import MobileSupport from '@/components/sections/mobile-support';
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-[#050b18] text-white">
+    <div className="min-h-screen bg-[#1a1f29] text-white">
       <Header />
       <main>
-        <HeroSection />
-        <Advantages />
-        <GameCategories />
-        <RegistrationGuide />
-        <BonusProgram />
-        <MobileInfo />
-        <FAQSection />
-        <ResponsibleGaming />
+        <Hero />
+        <EntranceInfo />
+        <MirrorSiteSection />
+        <Bonuses />
+        <GameCatalog />
+        <FinancialsSection />
+        <MobileSupport />
       </main>
-      <Footer />
     </div>
   );
 }
