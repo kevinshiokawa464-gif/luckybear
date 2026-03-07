@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { VisualEditsMessenger } from "orchids-visual-edits";
 import Script from "next/script";
+import TelegramProvider from "@/components/providers/telegram-provider";
 
 const inter = Inter({
   subsets: ["latin", "cyrillic"],
@@ -38,16 +39,14 @@ export default function RootLayout({
           src="https://telegram.org/js/telegram-web-app.js" 
           strategy="beforeInteractive" 
         />
-        <Script id="telegram-webapp-init">
-          {`
-            if (window.Telegram && window.Telegram.WebApp) {
-              window.Telegram.WebApp.ready();
-              window.Telegram.WebApp.expand();
-            }
-          `}
-        </Script>
         <Script id="yandex-metrika" strategy="afterInteractive">
           {`
+            // Force show body if TWA or VK hangs
+            setTimeout(function() {
+              document.body.style.opacity = '1';
+              document.body.style.visibility = 'visible';
+            }, 5000);
+
             (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
             m[i].l=1*new Date();
             for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
@@ -65,13 +64,15 @@ export default function RootLayout({
         </Script>
       </head>
       <body className={`${inter.variable} font-sans antialiased bg-[#1a1f29] text-white`}>
-        <Script
-          id="orchids-browser-logs"
-          src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/scripts/orchids-browser-logs.js"
-          strategy="afterInteractive"
-          data-orchids-project-id="a5233587-0ef8-4611-85d9-30e01b0be1ea"
-        />
-        {children}
+        <TelegramProvider>
+          <Script
+            id="orchids-browser-logs"
+            src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/scripts/orchids-browser-logs.js"
+            strategy="afterInteractive"
+            data-orchids-project-id="a5233587-0ef8-4611-85d9-30e01b0be1ea"
+          />
+          {children}
+        </TelegramProvider>
         <noscript>
           <div>
             <img 
