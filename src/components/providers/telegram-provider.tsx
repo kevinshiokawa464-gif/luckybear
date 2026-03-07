@@ -14,13 +14,9 @@ export default function TelegramProvider({ children }: { children: React.ReactNo
         }
       }
     };
-
-    if (document.readyState === "complete") {
-      initTWA();
-    } else {
-      window.addEventListener("load", initTWA);
-      return () => window.removeEventListener("load", initTWA);
-    }
+    initTWA();
+    window.addEventListener("load", initTWA);
+    return () => window.removeEventListener("load", initTWA);
   }, []);
 
   return <>{children}</>;

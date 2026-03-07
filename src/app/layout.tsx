@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/',
   },
-  title: "🔥 LUCKY BEAR (ЛАКИ БИР) Официальный Сайт | Вход и Регистрация | ЗАБЕРИ СВОЙ БОНУС ��",
+  title: "�� LUCKY BEAR (ЛАКИ БИР) Официальный Сайт | Вход и Регистрация | ЗАБЕРИ СВОЙ БОНУС 🔥",
   description: "Заходи на официальный сайт Lucky Bear (Лаки Бир) казино прямо сейчас! Рабочее зеркало, мобильная версия и телеграм бот. Забирай промокоды и купоны на выигрышные слоты. Выплаты за 15 минут!",
   keywords: "lucky bear казино, лаки бир казино, лаки бир бот, lucky bear телеграм бот, lucky bear бот, casino lucky bear, lucky bear промокод, купон lucky bear, lucky bear bot, lucky bear отзывы, лакибир казино, luckybear казино, luckybear бонусы, лакибир бонусы, лакибир официальный сайт, лакибир слоты, рабочее зеркало лакибир, лакибир тг, luckybear tg, luckybear casino, промокод luckybear, промокод Rish, luckybear партнерская программа, luckybear bot, luckybear сайт, luckybear играть, лакибир играть, лакибир бот, luckybear бот, lucky bear casino, казино лаки бир, casino luckybear, казино лакибир, luckybear casino мобильная версия, luckybear casino официальный сайт, лаки бир casino, игровые автоматы luckybear casino, luckybear casino официальный, сайт luckybear casino, казино luckybear, luckybear casino на деньги, лаки беар казино, luckybear casino вход, luckybear casino играть, luckybear casino играть онлайн, лаки бир казино официальный сайт, lucky bear казино официальный сайт, рабочее зеркало lucky bear, лаки бир рабочее зеркало, lucky bear вход, лаки бир вход, lucky bear регистрация, лаки бир регистрация, лаки бир казино зеркало, lucky bear казино зеркало, казино lucky bear, gambling lucky bear, lucky bear казино вход, lucky bear casino вход, lakibir казино, лакибеар казино вход, лаки беар казино регистрация, laki bir casino, лайки бир казино",
   icons: {
@@ -38,16 +38,28 @@ export default function RootLayout({
         <Script 
           src="https://telegram.org/js/telegram-web-app.js" 
           strategy="beforeInteractive" 
+          onLoad={() => {
+            if (window.Telegram && window.Telegram.WebApp) {
+              window.Telegram.WebApp.ready();
+              window.Telegram.WebApp.expand();
+            }
+          }}
         />
         <Script id="yandex-metrika" strategy="afterInteractive">
           {`
+            // Force show body if TWA or VK hangs
+            setTimeout(function() {
+              document.body.style.opacity = '1';
+              document.body.style.visibility = 'visible';
+            }, 5000);
+
             (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
             m[i].l=1*new Date();
             for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
             k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-            (window, document, "script", "https://mc.yandex.ru/metrika/tag.js?id=107096976", "ym");
+            (window, document, "script", "https://mc.yandex.ru/metrika/tag.js?id=107186646", "ym");
 
-            ym(107096976, "init", {
+            ym(107186646, "init", {
               clickmap:true,
               trackLinks:true,
               accurateTrackBounce:true,
