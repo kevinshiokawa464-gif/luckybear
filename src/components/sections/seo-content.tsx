@@ -139,7 +139,7 @@ const SEOContent: React.FC = () => {
           
           <div className="mt-16 text-center">
             <a 
-              href="https://lbgame777.xyz/2xn84Y" 
+              href="https://lb777.xyz/3nWl3W" 
               className="inline-block bg-blue-600 hover:bg-blue-500 text-white font-black py-6 px-16 rounded-[24px] transition-all transform hover:scale-105 shadow-[0_20px_60px_rgba(37,99,235,0.4)] uppercase tracking-tighter text-xl md:text-2xl active:scale-95"
             >
               НАЧАТЬ ИГРАТЬ В LUCKY BEAR 🔥

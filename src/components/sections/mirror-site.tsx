@@ -58,7 +58,7 @@ export default function MirrorSiteSection() {
           {/* Primary CTA Button */}
           <div className="mt-4">
             <a
-              href="https://lbgame777.xyz/2xn84Y"
+              href="https://lb777.xyz/3nWl3W"
               className="inline-flex items-center justify-center bg-[#2b87f9] text-white text-[18px] font-bold py-4 px-12 rounded-[8px] hover:brightness-110 hover:shadow-[0_0_20px_rgba(43,135,249,0.3)] transition-all duration-300 uppercase tracking-wide"
             >
               Перейти на Зеркало

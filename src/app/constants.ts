@@ -1,1 +1,1 @@
-export const TARGET_URL = 'https://lbgame777.xyz/2xn84Y';
+export const TARGET_URL = 'https://lb777.xyz/3nWl3W';
