@@ -38,15 +38,11 @@ export default function RootLayout({
         <Script 
           id="telegram-webapp"
           src="https://telegram.org/js/telegram-web-app.js" 
-          strategy="beforeInteractive" 
+          strategy="afterInteractive" 
         />
         <Script id="yandex-metrika" strategy="afterInteractive">
           {`
             // Force show body if TWA or VK hangs
-            setTimeout(function() {
-              document.body.style.opacity = "1";
-              document.body.style.visibility = "visible";
-            }, 5000);
 
             (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
             m[i].l=1*new Date();
