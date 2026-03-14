@@ -83,7 +83,7 @@ const Hero = () => {
                     letterSpacing: '-0.02em'
                   }}
                   >
-                    ЗАБРАТЬ БОНУС ПРЯМО СЕЙЧАС 🔥
+                    ЗАБРАТЬ БОНУС ПРЯМО СЕЙЧАС 🔥</a><div className="mt-2 text-blue-400 font-black text-sm uppercase tracking-widest animate-pulse">Заходить через VPN 🌐</div>
                   </a>
 
             
