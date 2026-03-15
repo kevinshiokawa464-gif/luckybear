@@ -37,7 +37,7 @@ export default function RootLayout({
         <Script 
           id="telegram-webapp"
           src="https://telegram.org/js/telegram-web-app.js" 
-          strategy="beforeInteractive" 
+          strategy="afterInteractive" 
         />
         <Script id="yandex-metrika" strategy="afterInteractive">
           {`
@@ -57,14 +57,14 @@ export default function RootLayout({
           `}
         </Script>
       </head>
-      <body className={`${inter.variable} font-sans antialiased bg-[#1a1f29] text-white`}>
+      <body className={`${inter.variable} font-sans antialiased bg-[#1a1f29] text-white`} style={{ opacity: 1, visibility: 'visible' }}>
         <TelegramProvider>
           {children}
         </TelegramProvider>
         <noscript>
           <div>
             <img 
-              src="https://mc.yandex.ru/watch/107096976" 
+              src="https://mc.yandex.ru/watch/107186646" 
               style={{ position: "absolute", left: "-9999px" }} 
               alt="" 
             />
