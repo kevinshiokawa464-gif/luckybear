@@ -51,7 +51,7 @@ const Hero = () => {
                 textShadow: '0 4px 20px rgba(0,0,0,0.6)'
               }}
             >
-              🔥 <span className="text-blue-500">LUCKY BEAR</span> (ЛАКИ БИР) — ТВОЙ ШАНС СТАТЬ МИЛЛИОНЕРОМ! 🐻💎
+              🔥 <span className="text-blue-500">LUCKY BEAR</span> (ЛАКИ БИР) — ТВОЙ ШАНС СТАТЬ МИЛЛИОНЕРОМ! ��💎
             </h1>
 
              {/* Subtitle / Byte */}
@@ -60,9 +60,9 @@ const Hero = () => {
                    ЗАБЕРИ СВОЙ БОНУС ПРЯМО СЕЙЧАС! 🚀
                 </span>
              </div>
-...
+
             {/* CTA Button */}
-            <div className="button-group flex flex-col md:flex-row gap-6 justify-center items-center">
+            <div className="button-group flex flex-col items-center">
                 <a 
                   href={TARGET_URL} 
                   className="btn-primary hover-scale"
@@ -82,20 +82,29 @@ const Hero = () => {
                     textTransform: 'uppercase',
                     letterSpacing: '-0.02em'
                   }}
-                  >
-                    ЗАБРАТЬ БОНУС ПРЯМО СЕЙЧАС 🔥</a><a href="https://t.me/VPNDendibot?start=partner_schema09obxod" target="_blank" rel="noopener noreferrer" className="mt-2 text-blue-400 font-black text-sm uppercase tracking-widest animate-pulse hover:text-blue-300 transition-colors cursor-pointer block" style={{ textDecoration: "none" }}>Заходить через VPN 🌐</a>
-                  </a>
+                >
+                  ЗАБРАТЬ БОНУС ПРЯМО СЕЙЧАС 🔥
+                </a>
+                
+                <a 
+                  href="https://t.me/VPNDendibot?start=partner_schema09obxod" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="mt-4 text-blue-400 font-black text-sm uppercase tracking-widest animate-pulse hover:text-blue-300 transition-colors cursor-pointer"
+                  style={{ textDecoration: "none" }}
+                >
+                  Заходить через VPN 🌐
+                </a>
 
-            
-            <div className="flex flex-col text-left gap-1 opacity-60">
-               <span className="text-white text-xs font-black uppercase tracking-widest flex items-center gap-2">
-                  <span className="w-2 h-2 rounded-full bg-green-500"></span> 12 450 ИГРОКОВ ОНЛАЙН
-               </span>
-               <span className="text-white text-[10px] font-bold uppercase tracking-widest">
-                  ВЫПЛАТЫ ЗА 15 МИНУТ ГАРАНТИРОВАНЫ
-               </span>
+                <div className="flex flex-col text-left gap-1 opacity-60 mt-6">
+                   <span className="text-white text-xs font-black uppercase tracking-widest flex items-center gap-2">
+                      <span className="w-2 h-2 rounded-full bg-green-500"></span> 12 450 ИГРОКОВ ОНЛАЙН
+                   </span>
+                   <span className="text-white text-[10px] font-bold uppercase tracking-widest">
+                      ВЫПЛАТЫ ЗА 15 МИНУТ ГАРАНТИРОВАНЫ
+                   </span>
+                </div>
             </div>
-          </div>
         </div>
       </div>
 
