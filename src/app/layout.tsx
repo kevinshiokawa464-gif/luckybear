@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
-import TelegramProvider from "@/components/providers/telegram-provider";
 
 const inter = Inter({
   subsets: ["latin", "cyrillic"],
@@ -30,11 +29,6 @@ export default function RootLayout({
   return (
     <html lang="ru">
       <head>
-        <Script 
-          id="telegram-webapp"
-          src="https://telegram.org/js/telegram-web-app.js" 
-          strategy="beforeInteractive" 
-        />
         <Script id="yandex-metrika" strategy="afterInteractive">
           {`
             (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
@@ -53,9 +47,7 @@ export default function RootLayout({
         </Script>
       </head>
       <body className={`${inter.variable} font-sans antialiased bg-[#1a1f29] text-white`}>
-        <TelegramProvider>
-          {children}
-        </TelegramProvider>
+        {children}
         <noscript>
           <div>
             <img 
