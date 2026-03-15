@@ -47,9 +47,6 @@ export default function RootLayout({
         </Script>
       </head>
       <body className={`${inter.variable} font-sans antialiased bg-[#1a1f29] text-white`}>
-        <div style={{ position: "fixed", top: 0, left: 0, zIndex: 9999, background: "red", color: "white", padding: "10px" }}>
-          TEST RENDER - SITE IS ALIVE
-        </div>
         {children}
         <noscript>
           <div>
