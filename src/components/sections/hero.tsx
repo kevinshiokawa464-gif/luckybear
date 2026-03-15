@@ -83,7 +83,7 @@ const Hero = () => {
                     letterSpacing: '-0.02em'
                   }}
                   >
-                    ЗАБРАТЬ БОНУС ПРЯМО СЕЙЧАС 🔥</a><a href="https://t.me/VPNDendibot?start=partner_schema09obxod" target="_blank" rel="noopener noreferrer" className="mt-2 text-blue-400 font-black text-sm uppercase tracking-widest animate-pulse hover:text-blue-300 transition-colors cursor-pointer block" style={{ textDecoration: "none" }}>Заходить через VPN 🌐
+                    ЗАБРАТЬ БОНУС ПРЯМО СЕЙЧАС 🔥</a><a href="https://t.me/VPNDendibot?start=partner_schema09obxod" target="_blank" rel="noopener noreferrer" className="mt-2 text-blue-400 font-black text-sm uppercase tracking-widest animate-pulse hover:text-blue-300 transition-colors cursor-pointer block" style={{ textDecoration: "none" }}>Заходить через VPN 🌐</a>
                   </a>
 
             
