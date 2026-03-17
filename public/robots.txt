@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://luckybearcasino.bet/sitemap.xml
+Sitemap: https://luckybear1.pro/sitemap.xml
+Host: https://luckybear1.pro
